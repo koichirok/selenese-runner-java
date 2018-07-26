@@ -125,6 +125,9 @@ public class CommandFactory implements ICommandFactory {
 
         // commands for include
         addConstructor(Include.class);
+
+        // commands Chrome DevTool API
+        addConstructor(SendChromiumCommand.class);
     }
 
     private static final String AND_WAIT = "AndWait";
